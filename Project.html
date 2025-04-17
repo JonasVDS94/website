@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VDS-CS</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+    </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="container-fluid py-1 shadow-sm bg-light">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">     
+      <div class="m-0 p-0 d-flex align-items-center">
+        <img src="assets/images/logo.png" alt="logo" class="img-fluid" width="80" height="80">
+      </div>
+      <h1 class="text-center text-black flex-grow-1 m-0">Pentest Webshop</h1>
+      <nav class="navbar navbar-expand-md navbar-light p-0">
+        <div class="container-fluid justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link text-black" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Portfolio.html">Overzicht</a></li>
+                  <li><a class="dropdown-item" href="Project.html">Pentest Webshop</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link text-black" href="Project.html">Project</a></li>
+              <li class="nav-item"><a class="nav-link text-black" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cyber-bg container-fluid py-5">
+    <div class="container">
+      <div class="row">
+        
+        <aside class="col-md-4 mb-4">
+          <div class="p-3 bg-white shadow-sm rounded">
+            <h4>Gerelateerde Projecten</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Firewall Upgrade</a></li>
+              <li><a href="#">VPN Setup</a></li>
+              <li><a href="#">Backup Audit</a></li>
+              <li><a href="#">Forensics Analyse</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <section class="col-md-8">
+          <div class="card shadow-sm mb-4">
+            <img src="assets/images/webshop.png" class="card-img-top" alt="Pentest Webshop">
+            <div class="card-body">
+              <h2 class="card-title">Pentest bij Online Webshop</h2>
+              <p class="card-text">
+                Voor een klant in de e-commerce sector hebben we een grondige penetratietest uitgevoerd op hun webshopplatform.
+                Tijdens de test werd gekeken naar kwetsbaarheden zoals SQL-injectie, XSS, authenticatie-zwaktes en onvoldoende versleuteling.
+              </p>
+              <h5>Doel</h5>
+              <p>
+                Het ontdekken van kwetsbaarheden in het platform voordat kwaadwillenden deze konden misbruiken.
+              </p>
+              <h5>Resultaat</h5>
+              <ul>
+                <li>3 kritieke kwetsbaarheden verholpen</li>
+                <li>Rapport en aanbevelingen overhandigd aan het interne team</li>
+                <li>Nieuwe authenticatieprocedure geïmplementeerd (MFA)</li>
+              </ul>
+              <h5>Gebruikte tools</h5>
+              <p>Burp Suite, OWASP ZAP, nmap, sqlmap</p>
+              <p class="mt-3"><a href="Portfolio.html" class="btn btn-ligt btn-sm btn-outline-success">← Terug naar portfolio</a></p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="container-fluid shadow-lg text-black text-center py-3 mt-0">
+    &copy; 2025 CyberSec Hulp. Veiligheid begint bij jezelf.
+  </footer>
+
+</body>
+</html>

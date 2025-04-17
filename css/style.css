@@ -1,0 +1,73 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.cyber-bg {
+  background-image: url('../assets/images/Cyberbackground.png'); /* pas dit pad aan naar je echte afbeelding */
+  background-size: cover;       /* Zorgt dat de foto mooi schaalt */
+  background-position: center;  /* Zorgt dat de foto mooi gecentreerd is */
+  background-repeat: no-repeat; /* Zorgt dat de foto niet herhaald wordt */
+}
+
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+  .aside {
+    background-color: #e9ecef;
+    padding: 20px;
+    width: 250px;
+    float: left;
+    border-right: 1px solid #ccc;
+    order: -1;
+  }
+
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+  }
+
+
+  header {
+    background: linear-gradient(180deg, #11A0D9, #073540);
+  }
+
+
+  footer {
+    background: linear-gradient(0deg, #11A0D9, #073540);
+  }
+
+
+  header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+
+  .grey-bg {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-left: 7px solid #000000;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .form-card {
+    background-color: rgba(255, 255, 255, 0.852);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+  }
+  
