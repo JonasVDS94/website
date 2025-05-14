@@ -13,6 +13,11 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
+
 </head>
 <body>
 
@@ -39,7 +44,7 @@
                   <li><a class="dropdown-item" href="Project.html">Pentest Webshop</a></li>
                 </ul>
               </li>
-              <li class="nav-item"><a class="nav-link text-black" href="Project.html">Project</a></li>
+              <li class="nav-item"><a class="nav-link text-black" href="info.html">Over ons</a></li>
               <li class="nav-item"><a class="nav-link text-black" href="contact.html">Contact</a></li>
             </ul>
           </div>
@@ -51,64 +56,78 @@
       <main class="cyber-bg container-fluid py-5">
         <div class="row">
           <aside class="col-md-4 mb-4 mb-md-0">
-            <div class="p-3 bg-light border rounded shadow-sm">
-              <h5>Extra Info</h5>
+            <div class="p-3 grey-bg border rounded shadow-sm">
+              <h5>Extra info</h5>
               <p><strong>Beschikbaar:</strong><br> Ma t/m Vr - 09:00 tot 17:00</p>
               <p><strong>Specialisaties:</strong></p>
-              <ul>
-                <li>Ransomware hulp</li>
-                <li>Phishing analyse</li>
-                <li>Netwerkbeveiliging</li>
-                <li>Incident response</li>
+              <ul class="list-unstyled">
+                <li>✔️ Ransomware hulp</li>
+                <li>✔️ Phishing analyse</li>
+                <li>✔️ Netwerkbeveiliging</li>
+                <li>✔️ Incident response</li>
               </ul>
               <p><strong>Directe hulp nodig?</strong><br>
-                Bel: +32 4 12345678</a>
+                Bel: +324 12 34 56 78</a>
               </p>
+
+              <!-- Leaflet JS -->
+              <h5 class="mt-4">📍 Locatie</h5>
+              <div id="map" style="height: 250px;" class="rounded shadow-sm"></div>
+              <script src="js/map.js" defer></script>
             </div>
           </aside>
     
           <section class="col-md-8">
-            <div class="form-card">
+            <div class="form-card mt-0">
             <h2>Neem contact op</h2>
             <p>Heb je te maken met een cyberaanval, datalek of een vermoeden van een beveiligingsprobleem? Vul onderstaand formulier in en ik neem zo snel mogelijk contact met je op.</p>
-    
-            <form>
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="lastname" class="form-label">Achternaam</label>
-                  <input type="text" class="form-control" id="lastname" placeholder="Achternaam" name="lastname" required>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="firstname" class="form-label">Voornaam</label>
-                  <input type="text" class="form-control" id="firstname" placeholder="Voornaam" name="firstname" required>
-                </div>
-              </div>
+            <p class="mt-2"><span class="text-danger">*</span> <span class="text-black">Verplichte velden</span></p>
+            
+            <form name="contact" method="POST" netlify>
+             <input type="hidden" name="form-name" value="contact">
 
-              <div class="mb-3">
-                <label for="email" class="form-label">E-mailadres</label>
-                <input type="email" class="form-control" id="email" placeholder="jij@example.com" required>
+              <div class="row">
+               <div class="col-md-6 mb-3">
+                <label for="lastname" class="form-label">Achternaam <span class="text-danger">*</span></label>
+               <input type="text" class="form-control" id="lastname" placeholder="Achternaam" name="lastname" required>
+               </div>
+              <div class="col-md-6 mb-3">
+                 <label for="firstname" class="form-label">Voornaam <span class="text-danger">*</span></label>
+                 <input type="text" class="form-control" id="firstname" placeholder="Voornaam" name="firstname" required>
+               </div>
+              <div class="col-md-6 mb-3">
+                <label for="telefoon" class="form-label">Telefoonnummer</label>
+               <input type="tel" class="form-control" id="telefoon" placeholder="bv. 04 12 34 56 78" name="telefoon">
               </div>
+               <div class="col-md-6 mb-3">
+                 <label for="email" class="form-label">E-mailadres <span class="text-danger">*</span></label>
+                 <input type="email" class="form-control" id="email" placeholder="jij@example.com" required>
+               </div>
+               </div>
+
     
               <div class="mb-3">
-                <label for="onderwerp" class="form-label">Onderwerp</label>
+                <label for="onderwerp" class="form-label">Onderwerp <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="onderwerp" placeholder="Bijv. Ransomware hulp" required>
               </div>
     
               <div class="mb-3">
-                <label for="bericht" class="form-label">Bericht</label>
+                <label for="bericht" class="form-label">Bericht <span class="text-danger">*</span></label>
                 <textarea class="form-control" id="bericht" rows="5" placeholder="Beschrijf je probleem..." required></textarea>
               </div>
     
-              <button type="submit" class="btn btn-primary">Verstuur</button>
+              <button type="submit" class="btn btn-md blauw-btn">Verstuur</button>
             </form>
           </div>
           </section>
         </div>
       </main>
     
-      <footer class="container-fluid shadow-lg text-black text-center py-3 mt-0">
+      <footer class="container-fluid text-center py-3 mt-0">
         &copy; 2025 CyberSec Hulp. Veiligheid begint bij jezelf.
       </footer>
       
+      <!-- Leaflet JS -->
+      <script src="js/map.js" defer></script>
     </body>
     </html>
