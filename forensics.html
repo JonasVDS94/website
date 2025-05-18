@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forensics analyse | VDS-CS</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="container-fluid py-1 shadow-sm bg-light">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">     
+      <div class="m-0 p-0 d-flex align-items-center">
+        <img src="assets/images/logo.png" alt="logo" class="img-fluid" width="80" height="80">
+      </div>
+      <h1 class="text-center text-black flex-grow-1 m-0">Forensics analyse</h1>
+      <nav class="navbar navbar-expand-md navbar-light p-0">
+        <div class="container-fluid justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link text-black" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="portfolio.html">Overzicht</a></li>
+                  <li><a class="dropdown-item" href="pentest.html">Pentest webshop</a></li>
+                  <li><a class="dropdown-item" href="firewall.html">Firewall upgrade</a></li>
+                  <li><a class="dropdown-item" href="awareness.html">Awareness workshop</a></li>
+                  <li><a class="dropdown-item" href="vpnsetup.html">VPN setup</a></li>
+                  <li><a class="dropdown-item" href="backup.html">Backup audit</a></li>
+                  <li><a class="dropdown-item" href="forensics.html">Forensics analyse</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link text-black" href="info.html">Over ons</a></li>
+              <li class="nav-item"><a class="nav-link text-black" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cyber-bg container-fluid py-5">
+    <div class="row">
+
+      <aside class="col-md-4">
+        <div class="p-3 grey-bg border rounded">
+          <h4>Gerelateerde projecten</h4>
+          <ul class="list-unstyled">
+            <li><a href="portfolio.html">🔍 Terug naar overzicht</a></li>
+            <li><a href="pentest.html">🛠️ Pentest webshop</a></li>
+            <li><a href="firewall.html">🛡️ Firewall upgrade</a></li>
+            <li><a href="awareness.html">📊 Awareness workshop</a></li>
+            <li><a href="vpnsetup.html">🔐 VPN setup</a></li>
+            <li><a href="backup.html">💾 Backup audit</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="col-md-8">
+        <div class="card">
+          <img src="assets/images/forensics.png" class="card-img-top" alt="Forensics Analyse">
+          <figcaption class="text-center text-muted small">
+             Bron: <a href="https://unsplash.com/photos/a-set-of-paper-with-a-magnifying-glass-bl9w-1wYX9c" target="_blank" rel="noopener noreferrer">Unsplash</a>
+          </figcaption>
+
+          <div class="card-body">
+            <h2 class="card-title">Digitale forensics na datalek</h2>
+            <p class="card-text">
+              Na melding van een mogelijk datalek bij een kmo, werd ons team ingeschakeld om een digitale forensische analyse uit te voeren.<br>Samen met het interne IT-team onderzochten we de aard, omvang en oorsprong van het incident.
+            </p>
+            <h5>Doel</h5>
+            <p>
+              Feiten verzamelen en logbestanden analyseren om reconstructie van het incident mogelijk te maken.
+            </p>
+            <h5>Resultaat</h5>
+            <ul class="list-unstyled">
+              <li>✔️ Identificatie van exfiltratie via RDP</li>
+              <li>✔️ Beveiligingslek in VPN-config blootgelegd</li>
+              <li>✔️ Verslag bezorgd aan DPO en gerechtelijke instanties</li>
+            </ul>
+            <h5>Gebruikte tools</h5>
+            <p>FTK Imager, Volatility, Sysinternals Suite, Zeek</p>
+            <p class="mt-3"><a href="portfolio.html" class="btn btn-md blauw-btn">← Terug naar portfolio</a></p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="container-fluid shadow-lg text-black text-center py-3 mt-0">
+  <div class="mb-2">
+    <a href="https://www.linkedin.com/in/jonas-v-a9579421a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZVyeVL6wSyK2Aq1xkdoKwA%3D%3D" target="_blank" rel="noopener noreferrer" class="mx-2 text-black">
+      <i class="bi bi-linkedin" style="font-size: 1.2rem;"></i>
+    </a>
+    <a href="https://github.com/JonasVDS94/" target="_blank" rel="noopener noreferrer" class="mx-2 text-black">
+      <i class="bi bi-github" style="font-size: 1.2rem;"></i>
+    </a>
+    <a href="mailto:jonasvande@outlook.com" class="mx-2 text-black">
+      <i class="bi bi-envelope-fill" style="font-size: 1.2rem;"></i>
+    </a>
+  </div>
+  &copy; 2025 VDS-CS . Veiligheid begint bij jezelf.
+ </footer>
+
+</body>
+</html>
